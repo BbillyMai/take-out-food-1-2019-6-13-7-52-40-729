@@ -74,14 +74,14 @@ function bestCharge(selectedItems) {
     receipt += `-----------------------------------\n`;
     receipt += `使用优惠:\n`;
     if( type == '指定菜品半价'){
-      receipt += `指定菜品半价(${promotionItems.join(",")})`
+      receipt += `指定菜品半价(${promotionItems.join("，")})`
     }else if(type == '满30减6元'){
       receipt += `满30减6元`
     }
-    receipt += `,省${total-minMoney}元\n`;
+    receipt += `，省${total-minMoney}元\n`;
   }
   receipt += `-----------------------------------\n`;
-  receipt += `总计：${minMoney}\n`
+  receipt += `总计：${minMoney}元\n`
   receipt += `===================================\n`;
   
   console.log(receipt);
