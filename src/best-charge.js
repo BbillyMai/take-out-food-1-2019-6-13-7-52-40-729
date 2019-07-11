@@ -1,3 +1,5 @@
+const loadAllItems = require("../src/items");
+const loadPromotions = require("../src/promotions");
 function bestCharge(selectedItems) {
   const allItems =  loadAllItems();
   const promotions =  loadPromotions();
@@ -88,4 +90,4 @@ function bestCharge(selectedItems) {
   return receipt;
 }
 
-module.export={bestCharge};
+module.exports={bestCharge};
